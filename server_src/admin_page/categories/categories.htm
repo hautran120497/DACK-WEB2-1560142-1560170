@@ -1,0 +1,63 @@
+<div class="row" style="margin-bottom: 18px;">
+  <div class="col-md-3">
+    <input id = "txt-add-catName" type="text" class = "form-control" placeholder="category name">
+  </div>
+  <div class="col-md-1 pl-md-0">
+    <button class="btn btn-light"id ="btn-add">
+      <i style="vertical-align: middle;" class="fas fa-plus"></i>
+    </button>
+  </div>
+</div>
+<div class="row">
+  <div class="table-responsive">
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Category Name</th>
+          <th>Created At</th>
+          <th>Last Update</th>
+          <th width="140px"></th>
+        </tr>
+      </thead>
+      <tbody>
+        {{#categories}}
+        <tr id="{{catID}}-info">
+          <td>{{@index}}</td>
+          <td id="name-{{catID}}">{{catName}}</td>
+          <td>{{createdAt}}</td>
+          <td>{{updatedAt}}</td>
+          <td style="padding: 7px;">
+            <button style="padding: auto; color:slateblue; margin-left: 5px;" class="btn btn-sm btn-edit" catID="{{catID}}" catName="{{catName}}">
+              <i class="fas fa-edit"></i>
+            </button>
+            <button style="padding: auto; color:sienna; margin-left: 5px;" class="btn btn-sm btn-delete" catID="{{catID}}" catName="{{catName}}">
+              <i class="far fa-trash-alt"></i>
+            </button>
+          </td>
+        </tr>
+        <tr id="tr-temp"></tr>
+        <tr id="{{catID}}-edit" style="display: none">
+          <td></td>
+          <td style="padding-left: 0px">
+            <input id="txt-{{catID}}" class="form-control" type="text" value="{{catName}}">
+          </td>
+          <td style="padding: 15px;">
+            <button style="padding: auto; color:slateblue; margin-left: 5px;" class="btn btn-sm btn-save" catID="{{catID}}" catName="{{catName}}">
+              <i class="fas fa-check"></i>
+            </button>
+            <button style="padding: auto; color:sienna; margin-left: 5px;" class="btn btn-sm btn-edit" catID="{{catID}}">
+              <i class="fas fa-times-circle"></i>
+            </button>
+          </td>
+          <td></td>
+          <td></td>
+        </tr>
+        {{/categories}}
+      </tbody>
+    </table>
+  </div>
+  </main>
+</div>
+<script src="./categories/categories.js"></script>
+<script src="./categories/fn.js"></script>

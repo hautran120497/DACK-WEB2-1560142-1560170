@@ -1,0 +1,36 @@
+<div class="row">
+    <div class="table-responsive">
+      <table class="table table-striped" id="datatable">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Username</th>
+            <th>Send At</th>
+            <th>First Request</th>
+            <th width="70px"></th>
+          </tr>
+        </thead>
+        <tbody>
+            {{#users}}
+          <tr id = "{{username}}">
+            <td>{{@index}}</td>
+            <td>{{username}}</td>
+            <td>{{updatedAt}}</td>
+            <td>{{createdAt}}</td>
+            <td style="padding: 7px;">
+              <button style="padding: auto; color: slateblue" class="btn btn-sm btn-accept" username="{{username}}">
+                <i class="fas fa-check"></i>
+              </button>
+              <button style="padding: auto; color: orangered" class="btn btn-sm btn-deny" username="{{username}}">
+                <i class="fas fa-ban"></i>
+              </button>
+            </td>
+          </tr>
+          {{/users}}
+        </tbody>
+      </table>
+    </div>
+  </main>
+</div>
+<script src="./requests/fn.js"></script>
+<script src="./requests/requests.js"></script>

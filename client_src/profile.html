@@ -1,0 +1,437 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+ 	<title>Cart</title>
+ 	<meta charset="utf-8">
+ 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+ 	<meta name="description" content="OneTech shop project">
+ 	<meta name="viewport" content="width=device-width, initial-scale=1">
+ 	<link rel="stylesheet" type="text/css" href="vendor/styles/bootstrap4/bootstrap.min.css">
+ 	<link href="vendor/plugins/fontawesome-free-5.0.1/css/fontawesome-all.css" rel="stylesheet" type="text/css">
+ 	<link rel="stylesheet" type="text/css" href="vendor/styles/cart_styles.css">
+ 	<link rel="stylesheet" type="text/css" href="vendor/styles/cart_responsive.css">
+
+ </head>
+
+ <body>
+
+ 	<div class="super_container">
+
+ 		<!-- Header -->
+
+		<header class="header">
+
+			<!-- Top Bar -->
+
+			<div class="top_bar">
+				<div class="container">
+					<div class="row">
+						<div class="col d-flex flex-row">
+							<div class="top_bar_contact_item"><div class="top_bar_icon"><img src="images/phone.png" alt=""></div>+84 xxx xxx xxxx</div>
+							<div class="top_bar_contact_item"><div class="top_bar_icon"><img src="images/mail.png" alt=""></div><a href="mailto:fastsales@gmail.com">xxx@gmail.com</a></div>
+							<div class="top_bar_content ml-auto">
+								<div class="top_bar_menu">
+									<ul class="standard_dropdown top_bar_dropdown">
+										<li id="userInfo">
+											<a href="javascript:;" id="userName"><div class="user_icon">
+												<img src="images/user.svg" alt=""></div>								
+											</a>
+											<ul>
+												<li id="resetPWD"><a href="javascript:;">Đổi mật khẩu</a></li>
+												<li><a href="profile.html">Danh sách theo dõi</a></li>
+												<li><a href="new_product.html">Đăng bán</a></li>
+												<li id="btn-gainvip"><a href="javascript:;">Xin đăng bán</a></li>
+												<li id="logout"><a href="javascript:;">Đăng xuất</a></li>
+											</ul>
+										</li>
+										<li id="login"><a href="javascript:;"><div class="user_icon">
+											<img src="images/user.svg" alt=""></div>Đăng nhập</a>
+										</li>										
+									</ul>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>		
+			</div>				
+
+			<!-- Header Main -->
+
+			<div class="header_main">
+				<div class="container">
+					<div class="row">
+
+						<!-- Logo -->
+						<div class="col-lg-3 col-sm-3 col-3 order-1">
+							<div class="logo_container">
+								<div class="logo"><a href="index.html">NEVERUN</a></div>
+							</div>
+						</div>
+
+						<!-- Search -->
+						<div class="col-lg-6 col-lg-offset-3 col-12 order-lg-2 order-3 text-lg-left text-right">
+							<div class="header_search">
+								<div class="header_search_content">
+									<div class="header_search_form_container">
+										<form class="header_search_form clearfix">
+											<input id="txtKeyWord" type="search" required="required" class="header_search_input" placeholder="Search for products...">
+											<button id="btnSearch" type="button" class="header_search_button trans_300"><img src="images/search.png" alt=""></button>
+										</form>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!-- Wishlist -->
+						<div class="col-lg-2 col-9 order-lg-3 order-2 text-lg-left text-right">
+							<div class="wishlist_cart d-flex flex-row align-items-center justify-content-end">
+								<div class="wishlist d-flex flex-row align-items-center justify-content-end">
+									<div class="wishlist_icon"><img src="images/heart.png" alt=""></div>
+									<div class="wishlist_content">
+										<div class="wishlist_text"><a href="profile.html">Watchlist</a></div>
+										<!-- <div class="wishlist_count">115</div> -->
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+			<!-- Main Navigation -->
+
+			<nav class="main_nav">
+				<div class="container">
+					<div class="row">
+						<div class="col">						
+							<div class="main_nav_content d-flex flex-row">
+
+								<!-- Categories Menu -->
+
+								<div class="cat_menu_container">
+									<div class="cat_menu_title d-flex flex-row align-items-center justify-content-start">
+										<div class="cat_burger"><span></span><span></span><span></span></div>
+										<div class="cat_menu_text">DANH MỤC SẢN PHẨM</div>
+									</div>
+									<ul class="cat_menu category-list" style="font-family: Arial">
+										<li><a href="javascript:;">Tất cả</a></li>
+										<!-- category_list -->
+									</ul>
+								</div>
+
+								<!-- Main Nav Menu -->
+
+								<div class="main_nav_menu ml-auto">
+									<ul class="standard_dropdown main_nav_dropdown">
+										<li><a href="index.html">Trang chủ<i class="fas fa-chevron-down"></i></a></li>
+										<li><a href="product.html">Sản phẩm<i class="fas fa-chevron-down"></i></a></li>
+										<li><a href="javascript:;">Đăng bán<i class="fas fa-chevron-down"></i></a></li>
+										<li><a href="javascript:;">Giới thiệu<i class="fas fa-chevron-down"></i></a></li>
+										<li><a href="javascript:;">Liên hệ<i class="fas fa-chevron-down"></i></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</nav>
+
+
+			<!-- Menu -->
+
+			<div class="page_menu">
+				<div class="container">
+					<div class="row">
+						<div class="col">
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+
+
+ 		<!-- Cart -->
+
+ 		<div class="cart_section">
+ 			<div class="container">
+ 				<div class="row">
+ 					<div class="col-lg-10 offset-lg-1">
+ 						<div class="cart_container">
+ 							<div>
+ 								<nav>
+ 									<div class="nav nav-tabs" id="nav-tab" role="tablist">
+ 										<a class="nav-item nav-link active" id="watchList-tab" data-toggle="tab" href="#nav-watchList" role="tab" aria-controls="nav-watchList" aria-selected="true">Watchlist</a>
+ 										<a class="nav-item nav-link" id="nav-bidding-tab" data-toggle="tab" href="#nav-bidding" role="tab" aria-controls="nav-bidding" aria-selected="false">Đang đấu giá</a>
+ 										<a class="nav-item nav-link" id="nav-successfulBid-tab" data-toggle="tab" href="#nav-successfulBid" role="tab" aria-controls="nav-successfulBid" aria-selected="false">Đấu giá thành công</a>
+ 										<a class="nav-item nav-link" id="nav-myProduct-tab" data-toggle="tab" href="#nav-myProduct" role="tab" aria-controls="nav-myProduct" aria-selected="false">Sản phẩm đăng bán</a>
+ 										<a class="nav-item nav-link" id="nav-myProductTimeOut-tab" data-toggle="tab" href="#nav-myProductTimeOut" role="tab" aria-controls="nav-myProductTimeOut" aria-selected="false">Sản phẩm đăng bán hết giờ</a>
+ 									</div>
+ 								</nav>
+ 								<div class="tab-content" id="nav-tabContent">
+ 									<div class="tab-pane fade show active" id="nav-watchList" role="tabpanel" aria-labelledby="nav-watchList-tab">
+ 										<table class="table table-striped">
+ 											<thead style="text-align: center;">
+ 												<tr>
+ 													<th scope="col">#</th>
+ 													<th scope="col">Sản phẩm</th>
+ 													<th scope="col">Người bán</th>
+ 													<th scope="col">Số lượt ra giá</th>
+ 													<th scope="col">Giá hiện tại</th>
+ 													<th scope="col">Người giữ giá</th>
+ 												</tr>
+ 											</thead>
+ 											<tbody id="watchlist" style="text-align: center;">
+ 												
+ 											</tbody>
+ 										</table>
+ 									</div>
+ 									<div class="tab-pane fade" id="nav-bidding" role="tabpanel" aria-labelledby="nav-bidding-tab">
+ 										<table class="table table-striped">
+ 											<thead style="text-align: center;">
+ 												<tr>
+ 													<th scope="col">#</th>
+ 													<th scope="col">Sản phẩm</th>
+ 													<th scope="col">Người bán</th>
+ 													<th scope="col">Số lượt ra giá</th>
+ 													<th scope="col">Giá hiện tại</th>
+ 													<th scope="col">Người giữ giá</th>
+ 												</tr>
+ 											</thead>
+ 											<tbody id="bidding" style="text-align: center;">
+ 											</tbody>
+ 										</table>
+ 									</div>
+ 									<div class="tab-pane fade" id="nav-successfulBid" role="tabpanel" aria-labelledby="nav-successfulBid-tab">
+ 										<table class="table table-striped">
+ 											<thead style="text-align: center;">
+ 												<tr>
+ 													<th scope="col">#</th>
+ 													<th scope="col">Sản phẩm</th>
+ 													<th scope="col">Người bán</th>
+ 													<th scope="col">Số lượt ra giá</th>
+ 													<th scope="col">Giá thắng cuộc</th>
+ 												</tr>
+ 											</thead>
+ 											<tbody id="successfulBid" style="text-align: center;">
+
+ 											</tbody>
+ 										</table>
+ 									</div>
+ 									<div class="tab-pane fade" id="nav-myProduct" role="tabpanel" aria-labelledby="nav-myProduct-tab">
+ 										<table class="table table-striped">
+ 											<thead style="text-align: center;">
+ 												<tr>
+ 													<th scope="col">#</th>
+ 													<th scope="col">Sản phẩm</th>
+ 													<th scope="col">Số lượt ra giá</th>
+ 													<th scope="col">Giá hiện tại</th>
+ 													<th scope="col">Người giữ giá</th>
+ 													<th scope="col">&nbsp;</th>
+ 												</tr>
+ 											</thead>
+ 											<tbody id="my-product" style="text-align: center;">
+ 											</tbody>
+ 										</table>
+ 									</div>
+ 									<div class="tab-pane fade" id="nav-myProductTimeOut" role="tabpanel" aria-labelledby="nav-myProductTimeOut-tab">
+ 										<table class="table table-striped">
+ 											<thead style="text-align: center;">
+ 												<tr>
+ 													<th scope="col">#</th>
+ 													<th scope="col">Sản phẩm</th>
+ 													<th scope="col">Số lượt ra giá</th>
+ 													<th scope="col">Giá thắng cuộc</th>
+ 													<th scope="col">Người thắng cuộc</th>
+ 													<th scope="col">&nbsp;</th>
+ 												</tr>
+ 											</thead>
+ 											<tbody id="my-productTimeOut" style="text-align: center;">
+ 											</tbody>
+ 										</table>
+ 									</div>
+ 								</div>
+ 							</div>
+ 						</div>
+ 					</div>
+ 				</div>
+ 			</div>
+ 		</div>
+
+ 		<!-- Copyright -->
+
+ 		<div class="copyright">
+ 			<div class="container">
+ 				<div class="row">
+ 					<div class="col">
+
+ 						<div class="copyright_container d-flex flex-sm-row flex-column align-items-center justify-content-start">
+ 							<div class="copyright_content"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+ 								Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+ 								<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+ 							</div>
+ 							<div class="logos ml-sm-auto">
+ 								<ul class="logos_list">
+ 									<li><a href="#"><img src="images/logos_1.png" alt=""></a></li>
+ 									<li><a href="#"><img src="images/logos_2.png" alt=""></a></li>
+ 									<li><a href="#"><img src="images/logos_3.png" alt=""></a></li>
+ 									<li><a href="#"><img src="images/logos_4.png" alt=""></a></li>
+ 								</ul>
+ 							</div>
+ 						</div>
+ 					</div>
+ 				</div>
+ 			</div>
+ 		</div>
+ 	</div>
+
+ 	
+<!-- The Modal login -->
+<div class="modal fade" id="modalLogin">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">					
+				<nav>
+					<div class="nav nav-tabs" id="nav-tab" role="tablist">
+						<a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-login" role="tab" aria-controls="nav-home" aria-selected="true">LOGIN</a>
+						<a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">REGISTER</a>
+					</div>
+				</nav>
+				<button type="button" class="close" data-dismiss="modal">×</button>
+			</div>
+
+			<!-- Modal body -->
+			<div class="modal-body">				
+				<div class="tab-content" id="nav-tabContent">
+					<div class="tab-pane fade show active" id="nav-login" role="tabpanel" aria-labelledby="nav-home-tab">
+						<form>
+							<div class="form-group">
+								<label for="txtUser">User Name</label>
+								<input type="text" class="form-control" id="txtUser" aria-describedby="userNameHelp" placeholder="Enter userName" required>                
+							</div>
+							<div class="form-group">
+								<label for="txtPWD">Password</label>
+								<input type="password" class="form-control" id="txtPWD" placeholder="Password" required>
+							</div>
+							<div class="form-group">
+								<button type="submit" class="btn btn-primary" id="btnLogin" data-dismiss="modal" style="padding-top: 10px">Login</button>
+								<small id="forgotPWD"><a href="javascript:;">Quên mật khẩu</a></small>
+							</div>
+						</form>						
+					</div>
+					<div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-home-tab">
+						<form id="registerForm" >
+							<div class="form-group">
+								<label for="txtUserName" class="control-label">Username</label>
+								<input type="text" class="form-control" id="txtUserName" name="username" placeholder="Steve" required>
+							</div>
+							<div class="form-group">
+								<label for="txtPassword" class="control-label">Password</label>
+								<input type="password" class="form-control" name="password" id="txtPassword" placeholder="Password">
+							</div>
+							<div class="form-group">
+								<label for="txtConfirmPWD" class="control-label">Confirm Password</label>
+								<input type="password" class="form-control" name="ConfirmPWD" id="txtConfirmPWD" placeholder="Password">
+							</div>                
+							<div class="form-group">
+								<label for="txtEmail" class="control-label">Email</label>
+								<input type="email" class="form-control" name="email" id="txtEmail" placeholder="steve.jobs@apple.com">
+							</div>
+							<div class="form-group">
+								<label for="txtPhone" class="control-label">Phone</label>
+								<input type="text" class="form-control" name="phone" id="txtPhone" placeholder="+84 09xxxxxxx">
+							</div>                
+							<div class="form-group">
+								<label for="" class="col-sm-2 control-label"></label>
+								<div class="col-sm-10">
+									<div class="g-recaptcha" data-sitekey="6LelPF8UAAAAABNvgGwFxMF54oBajdc8NFNl-7wJ"></div>
+								</div>
+							</div>
+							<div class="form-group">
+								<button type="submit" class="btn btn-primary text-center" id="btnRegister" data-dismiss="modal">Register</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- doi mat khau -->
+<div class="modal" tabindex="-1" role="dialog" id="modalResetPWD">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title">Đổi mật khẩu</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				<form>
+					<div class="form-group">
+						<label for="txtOldPassword" class="control-label">Old Password</label>
+						<input type="password" class="form-control" name="password" id="txtOldPassword" placeholder="Password">
+					</div>
+					<div class="form-group">
+						<label for="txtNewPassword" class="control-label">New Password</label>
+						<input type="password" class="form-control" name="password" id="txtNewPassword" placeholder="Password">
+					</div>
+					<div class="form-group">
+						<label for="txtConfirmNewPWD" class="control-label">Confirm New Password</label>
+						<input type="password" class="form-control" name="ConfirmPWD" id="txtConfirmNewPWD" placeholder="Password">
+					</div> 
+				</form>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-primary" id="btnResetPWD">Đổi mật khẩu</button>
+				<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+ 	<!-- The Modal -->
+ 	<div class="modal fade" id="modalEditProduct">
+ 		<div class="modal-dialog">
+ 			<div class="modal-content">
+ 				<!-- Modal Header -->
+ 				<div class="modal-header">					
+ 					<h4 class="modal-title">Cập nhật nội dung</h4>
+ 					<button type="button" class="close" data-dismiss="modal">×</button>
+ 				</div>
+
+ 				<!-- Modal body -->
+ 				<div class="modal-body">
+ 					<div class="form-group">
+ 						<textarea></textarea>              
+ 					</div>
+ 				</div>
+
+ 				<!-- Modal footer -->
+ 				<div class="modal-footer">
+ 					<button type="submit" class="btn btn-primary" id="btnEdit" data-dismiss="modal">Thêm mô tả</button>
+ 				</div>
+
+ 			</div>
+ 		</div>
+ 	</div>
+
+ 	<script src="vendor/js/jquery-3.3.1.min.js"></script>
+ 	<script src="vendor/styles/bootstrap4/popper.js"></script>
+ 	<script src="vendor/styles/bootstrap4/bootstrap.min.js"></script>
+ 	<script src="vendor/plugins/greensock/TweenMax.min.js"></script>
+ 	<script src="vendor/plugins/greensock/TimelineMax.min.js"></script>
+ 	<script src="vendor/plugins/scrollmagic/ScrollMagic.min.js"></script>
+ 	<script src="vendor/plugins/greensock/animation.gsap.min.js"></script>
+ 	<script src="vendor/plugins/greensock/ScrollToPlugin.min.js"></script>
+ 	<script src="vendor/plugins/easing/easing.js"></script>
+ 	<script src="vendor/js/cart_custom.js"></script>
+ 	<script src="js/user.js"></script>
+ 	<script src="js/profile.js"></script>
+ </body>
+
+ </html>

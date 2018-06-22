@@ -1,0 +1,128 @@
+Anonymos:
+- PRODUCT
+	+ get all product
+		GET: 	api/products
+	+ get products with options
+		GET: 	api/product?
+				limit=[0...]
+				&order=[column]
+				&sort=[asc/desc]
+				&offset=[0...]
+				&keyword=[a...]
+				&isTimeOut=1/0
+				&proName=[a...]
+				&catID=[0...]
+				&nearend=now
+
+		EX: localhost:3000/products?limit=2&keyword=m&offset=0&order=catID&sort=desc
+	+ image:
+		http://localhost:3000/products/image/:proID
+	+ get details
+		GET: 	api/products/:id
+	+ create new product
+		POST: 	api/products
+			!req.body.proName
+			|| !req.body.catID
+			|| !req.body.username
+			|| !req.body.initPrice
+			|| !req.body.stepPrice
+			|| !req.body.description
+			|| !req.body.remainTime
+	+ update a product
+		PUT: 	api/products
+	+ delete a product
+		DELETE: api/products
+	+ get current prices
+		GET:	api/products/:id/current_prices
+
+- CATEGORIES
+	+ get all
+		GET: api/categories?keyword=[...]
+	+ get one
+		GET: api/categories/:id
+	+ add/update/remove
+		POST/PUT/DELETE: api/categories/:id
+
+- SEARCH
+	+ search product
+		GET: 	api/products/search?keyword=[...]
+	+ search category
+		GET: 	api/categories/search?keyword=[...]
+
+- BIDS
+	+ get list bids list of a product/user
+		GET: api/bids?proID=proId
+		GET: api/bids?username=username
+		GET: api/bids?username=username&proID=proID
+	+ bid a product
+		POST: api/bids
+		    // poco{
+			//     username:user,
+			//     proID:id,
+			//     maxPrice:num
+			// }
+	+ Shot one hit a product
+		POST: api/bids/oneshot
+		    // poco{
+			//     username:user,
+			//     proID:id
+			// }
+
+	+ kick a user out of bids
+		POST: 	api/bids/kick
+			// poco{
+			//     username:username,
+			//     proID:id
+			// }
+
+		
+- USER
+	+ get details infor
+		GET:	api/users/:id
+	+ create new user
+		POST:	api/users
+	+ update user info
+		PUT:	api/users/:username
+	+ get/add/remove watchlist
+		GET/POST/DELETE: 	api/users/watchlist/:username
+	+ reset password
+		POST: 	api/users/evaluate
+		//{
+		//	fromUser : username,
+		//	toUser : username,
+		// 	message: string
+		//	action : 1(-1)
+		//}
+	+ reset password
+		PUT: 	api/users/resetpwd/:username
+	
+	+ gain vip request
+		POST: api/users/gainvip/:username
+
+	+ validate account request
+		POST: api/users/validate/:username
+
+- AUTHENTICATION
+		POST: 	api/auth/login
+		//poco{
+		//	username:username,
+		//	password:password
+		//}
+		GET: api/auth/logout
+
+- CAPCHAR:
+	- data-sitekey="6LelPF8UAAAAABNvgGwFxMF54oBajdc8NFNl-7wJ"
+___________________________________________________________________
+thông tin một sản phẩm
+	
++ seen product => save into brower storage
+
++ image:
+	- http://localhost:3000/image/products/1/1.jpg
+	
++ user authentication step 
+	- 0: send api/users/:username
+	- 1: Check user account isValidated = true
+	- 2: send api/auth/login
+	
+	

@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="icon" href="#">
+
+  <title>Admin</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="./node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Datatable core CSS -->
+  <link rel="stylesheet" type="text/css" href="./vendor/DataTables-1.10.18/css/dataTables.bootstrap4.min.css" />
+  <link rel="stylesheet" type="text/css" href="./vendor/fontawesome-free-5.0.13/web-fonts-with-css/css/fontawesome-all.min.css"
+  />
+   <!-- Sweet Alert core CSS -->
+   <link rel="stylesheet" href="./node_modules/sweetalert2/dist/sweetalert2.min.css">
+  <!-- Custom styles for this template -->
+  <link href="./all.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+  <nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
+    <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="javascript:;" id="btn-home">NEVERBUG</a>
+    <input class="form-control form-control-dark w-100" type="text" placeholder="Search" aria-label="Search">
+    <ul class="navbar-nav px-3">
+      <li class="nav-item text-nowrap">
+        <a id="btn-logout" class="nav-link" href="javascript:;">Sign out</a>
+      </li>
+    </ul>
+  </nav>
+
+  <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+    <div class="sidebar-sticky">
+      <ul class="nav flex-column">
+        <li class="nav-item">
+          <a class="nav-link" href="javascript:;" id="btn-gainvip">
+            <span data-feather="home"></span>
+            Requests
+            <span class="sr-only">(current)</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="javascript:;" id="btn-categories">
+            <span data-feather="file"></span>
+            Categories
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="javascript:;" id="btn-customers">
+            <span data-feather="users"></span>
+            Customers
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+    <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+      <h1 class="h2" id='header-conent'>GIAN VIP REQUESTS</h1>
+      <!-- <div class="btn-toolbar mb-2 mb-md-0">
+        <div class="btn-group mr-2">
+          <button class="btn btn-sm btn-outline-secondary">Share</button>
+          <button class="btn btn-sm btn-outline-secondary">Export</button>
+        </div>
+        <button class="btn btn-sm btn-outline-secondary dropdown-toggle">
+          <span data-feather="calendar"></span>
+          This week
+        </button>
+      </div> -->
+    </div>
+
+  <div class="container-fluid" id="main-content">
+
+  </div>
+  
+  </main>
+  <!-- Bootstrap core JavaScript
+    ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="./node_modules/popper.js/dist/popper.min.js"></script>
+  <script src="./node_modules/handlebars/dist/handlebars.min.js"></script>
+  <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="./node_modules/moment/min/moment.min.js"></script>
+  <script src="./vendor/DataTables-1.10.18/js/jquery.dataTables.min.js"></script>
+  <script src="./vendor/DataTables-1.10.18/js/dataTables.bootstrap4.min.js"></script>
+  <script src="./node_modules/metismenu/dist/metisMenu.min.js"></script>
+  <script src="./node_modules/sweetalert2/dist/sweetalert2.all.min.js"></script>
+
+  <script src="./all.js"></script>
+</body>
+
+</html>

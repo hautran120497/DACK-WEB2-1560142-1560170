@@ -1,0 +1,41 @@
+<div class="row">
+    <div class="table-responsive">
+    <table class="table table-striped" id="datatable">
+      <thead>
+        <tr>
+            <th>#</th>
+            <th>Username</th>
+            <th>Email</th>
+            <th>Phone</th>
+            <th>Point</th>
+            <th>Validated</th>
+            <th>VIP</th>
+            <th>Created At</th>
+            <th width="50px"></th>
+          </tr>
+        </thead>
+        <tbody>
+            {{#customers}}
+          <tr id="{{username}}">
+            <td>{{@index}}</td>
+            <td>{{username}}</td>
+            <td>{{email}}</td>
+            <td>{{phone}}</td>
+            <td>{{point}}</td>
+            <td>{{isValidated}}</td>
+            <td>{{gainvipAt}}</td>
+            <td>{{createdAt}}</td><kbd></kbd>
+            <td style="padding: 7px;">
+              <button style="padding: auto; color:sienna; margin-left: 5px;" class="btn btn-sm btn-delete" username="{{username}}">
+                <i class="far fa-trash-alt"></i>
+              </button>
+            </td>
+          </tr>
+          {{/customers}}
+        </tbody>
+      </table>
+    </div>
+  </main>
+</div>
+<script src="./customers/customers.js"></script>
+<script src="./customers/fn.js"></script>

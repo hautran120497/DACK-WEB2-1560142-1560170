@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>ĐĂNG SẢN PHẨM ĐẤU GIÁ</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="OneTech shop project">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="vendor/styles/bootstrap4/bootstrap.min.css">
+	<link href="vendor/plugins/fontawesome-free-5.0.1/css/fontawesome-all.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="vendor/plugins/OwlCarousel2-2.2.1/owl.carousel.css">
+	<link rel="stylesheet" type="text/css" href="vendor/plugins/OwlCarousel2-2.2.1/owl.theme.default.css">
+	<link rel="stylesheet" type="text/css" href="vendor/plugins/OwlCarousel2-2.2.1/animate.css">
+	<link rel="stylesheet" type="text/css" href="vendor/plugins/slick-1.8.0/slick.css">
+	<link rel="stylesheet" type="text/css" href="vendor/styles/main_styles.css">
+	<link rel="stylesheet" type="text/css" href="vendor/styles/responsive.css">
+	<link rel="stylesheet" type="text/css" href="vendor/styles/tempusdominus-bootstrap-4.min.css">
+	<link rel="stylesheet" type="text/css" href="vendor/styles/summernote-bs4.css">
+	<link rel="stylesheet" type="text/css" href="node_modules/tempusdominus-bootstrap-4/build/css/tempusdominus-bootstrap-4.min.css">
+
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.9/summernote-bs4.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+	<div class="super_container">
+
+		<!-- Header -->
+
+		<header class="header">
+
+			<!-- Top Bar -->
+
+			<div class="top_bar">
+				<div class="container">
+					<div class="row">
+						<div class="col d-flex flex-row">
+							<div class="top_bar_contact_item"><div class="top_bar_icon"><img src="images/phone.png" alt=""></div>+84 xxx xxx xxxx</div>
+							<div class="top_bar_contact_item"><div class="top_bar_icon"><img src="images/mail.png" alt=""></div><a href="mailto:fastsales@gmail.com">xxx@gmail.com</a></div>
+							<div class="top_bar_content ml-auto">
+								<div class="top_bar_menu">
+									<ul class="standard_dropdown top_bar_dropdown">
+										<li id="userInfo">
+											<a href="javascript:;" id="userName"><div class="user_icon">
+												<img src="images/user.svg" alt=""></div>								
+											</a>
+											<ul>
+												<li id="resetPWD"><a href="javascript:;">Đổi mật khẩu</a></li>
+												<li><a href="profile.html">Danh sách theo dõi</a></li>
+												<li><a href="new_product.html">Đăng bán</a></li>
+												<li id="btn-gainvip"><a href="javascript:;">Xin đăng bán</a></li>
+												<li id="logout"><a href="javascript:;">Đăng xuất</a></li>
+											</ul>
+										</li>
+										<li id="login"><a href="javascript:;"><div class="user_icon">
+											<img src="images/user.svg" alt=""></div>Đăng nhập</a>
+										</li>										
+									</ul>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>		
+			</div>				
+
+			<!-- Header Main -->
+
+			<div class="header_main">
+				<div class="container">
+					<div class="row">
+
+						<!-- Logo -->
+						<div class="col-lg-3 col-sm-3 col-3 order-1">
+							<div class="logo_container">
+								<div class="logo"><a href="index.html">NEVERUN</a></div>
+							</div>
+						</div>
+
+						<!-- Search -->
+						<div class="col-lg-6 col-lg-offset-3 col-12 order-lg-2 order-3 text-lg-left text-right">
+							<div class="header_search">
+								<div class="header_search_content">
+									<div class="header_search_form_container">
+										<form class="header_search_form clearfix">
+											<input id="txtKeyWord" type="search" required="required" class="header_search_input" placeholder="Search for products...">
+											<button id="btnSearch" type="button" class="header_search_button trans_300"><img src="images/search.png" alt=""></button>
+										</form>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!-- Wishlist -->
+						<div class="col-lg-2 col-9 order-lg-3 order-2 text-lg-left text-right">
+							<div class="wishlist_cart d-flex flex-row align-items-center justify-content-end">
+								<div class="wishlist d-flex flex-row align-items-center justify-content-end">
+									<div class="wishlist_icon"><img src="images/heart.png" alt=""></div>
+									<div class="wishlist_content">
+										<div class="wishlist_text"><a href="profile.html">Watchlist</a></div>
+										<!-- <div class="wishlist_count">115</div> -->
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+			<!-- Main Navigation -->
+
+			<nav class="main_nav">
+				<div class="container">
+					<div class="row">
+						<div class="col">						
+							<div class="main_nav_content d-flex flex-row">
+
+								<!-- Categories Menu -->
+
+								<div class="cat_menu_container">
+									<div class="cat_menu_title d-flex flex-row align-items-center justify-content-start">
+										<div class="cat_burger"><span></span><span></span><span></span></div>
+										<div class="cat_menu_text">DANH MỤC SẢN PHẨM</div>
+									</div>
+									<ul class="cat_menu category-list" style="font-family: Arial">
+										<li><a href="javascript:;">Tất cả</a></li>
+										<!-- category_list -->
+									</ul>
+								</div>
+
+								<!-- Main Nav Menu -->
+
+								<div class="main_nav_menu ml-auto">
+									<ul class="standard_dropdown main_nav_dropdown">
+										<li><a href="index.html">Trang chủ<i class="fas fa-chevron-down"></i></a></li>
+										<li><a href="product.html">Sản phẩm<i class="fas fa-chevron-down"></i></a></li>
+										<li><a href="javascript:;">Đăng bán<i class="fas fa-chevron-down"></i></a></li>
+										<li><a href="javascript:;">Giới thiệu<i class="fas fa-chevron-down"></i></a></li>
+										<li><a href="javascript:;">Liên hệ<i class="fas fa-chevron-down"></i></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</nav>
+
+
+			<!-- Menu -->
+
+			<div class="page_menu">
+				<div class="container">
+					<div class="row">
+						<div class="col">
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+
+
+		<!--top-->
+
+		<div class="container" style="padding: 10px;">
+			
+			<div class="col-sm-8 col-md-8 offset-md-2" style="padding-top: 10px">
+				<h3 style="font-family: Arial">ĐĂNG SẢN PHẨM ĐẤU GIÁ</h3>
+				<form enctype="multipart/form-data" method="post" action="http://localhost:3000/products" id="product_form">
+					<div class="form-group">
+						<label for="txtProName">Tên sản phẩm</label>
+						<input type="text" class="form-control" id="txtProName" name="proName" placeholder="Gà quay" required>
+					</div>
+					<div class="form-group">
+						<label for="txtCatID">Danh mục</label>
+						<select class="form-control" id="selectCatID" name="catID" style="margin-left: 0">
+
+						</select>
+					</div>	
+					<div class="form-group">
+						<label for="txtInitPrice">Giá khởi điểm (VNĐ)</label>
+						<input type="number" class="form-control" name="initPrice" id="txtInitPrice" min="1000" value="1000" step="1000" required>
+					</div>
+					<div class="form-group">
+						<label for="txtStepPrice">Bước giá (VNĐ)</label>
+						<input type="number" class="form-control" name="stepPrice" id="txtStepPrice" value="1000" step="1000" min="1000" required>
+					</div>
+					<div class="form-group">
+						<label for="txtSortPrice">Giá mua ngay (VNĐ)</label>
+						<input type="number" class="form-control" name="shotPrice" id="" min="1000" value="1000" step="1000" >
+					</div>
+					<div class="form-group">
+						<label for="txtDescription">Mô tả sản phẩm</label>
+						<textarea class="form-control" name="description"  id="txtDescription"></textarea>
+					</div>
+					<div class="form-group col-md-5" style="padding-left: 0px">
+						<label for="datetimepicker">Thời gian kết thúc</label>
+						<input type="text" class="form-control datetimepicker-input" id="datetimepicker" data-toggle="datetimepicker" data-target="#datetimepicker" name="remainTime" / required>
+					</div>
+					<div class="form-group">
+						<label for="imgProduct">Ảnh sản phẩm</label>
+						<input type="file" name="photos" accept=".jpg, .png, .jpeg|images/*" multiple id="imgProduct"/>
+					</div>
+					<div class="form-check">
+						<input type="checkbox" class="form-check-input" name="autoRenewal" id="autoCheck" style="margin-left: 0">
+						<label class="form-check-label" for="autoCheck">Tự động gia hạn</label>
+					</div>
+					<div class="form-group" style="display: none;">
+						<input type="text" name="username" id="txtuserName" value="th">
+					</div>
+					<button type="submit" id="btnCreate" class="btn btn-primary">Đăng sản phẩm</button>
+				</form>
+			</div>		
+
+		</div>
+
+		<!-- Copyright -->
+
+		<div class="copyright" style="margin-top: 10px">
+			<div class="container">
+				<div class="row">
+					<div class="col">
+
+						<div class="copyright_container d-flex flex-sm-row flex-column align-items-center justify-content-start">
+							<div class="copyright_content"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+								Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+								<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+							</div>
+							<div class="logos ml-sm-auto">
+								<ul class="logos_list">
+									<li><a href="#"><img src="images/logos_1.png" alt=""></a></li>
+									<li><a href="#"><img src="images/logos_2.png" alt=""></a></li>
+									<li><a href="#"><img src="images/logos_3.png" alt=""></a></li>
+									<li><a href="#"><img src="images/logos_4.png" alt=""></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<!-- The Modal login -->
+<div class="modal fade" id="modalLogin">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">					
+				<nav>
+					<div class="nav nav-tabs" id="nav-tab" role="tablist">
+						<a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-login" role="tab" aria-controls="nav-home" aria-selected="true">LOGIN</a>
+						<a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">REGISTER</a>
+					</div>
+				</nav>
+				<button type="button" class="close" data-dismiss="modal">×</button>
+			</div>
+
+			<!-- Modal body -->
+			<div class="modal-body">				
+				<div class="tab-content" id="nav-tabContent">
+					<div class="tab-pane fade show active" id="nav-login" role="tabpanel" aria-labelledby="nav-home-tab">
+						<form>
+							<div class="form-group">
+								<label for="txtUser">User Name</label>
+								<input type="text" class="form-control" id="txtUser" aria-describedby="userNameHelp" placeholder="Enter userName" required>                
+							</div>
+							<div class="form-group">
+								<label for="txtPWD">Password</label>
+								<input type="password" class="form-control" id="txtPWD" placeholder="Password" required>
+							</div>
+							<div class="form-group">
+								<button type="submit" class="btn btn-primary" id="btnLogin" data-dismiss="modal" style="padding-top: 10px">Login</button>
+								<small id="forgotPWD"><a href="javascript:;">Quên mật khẩu</a></small>
+							</div>
+						</form>						
+					</div>
+					<div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-home-tab">
+						<form id="registerForm" >
+							<div class="form-group">
+								<label for="txtUserName" class="control-label">Username</label>
+								<input type="text" class="form-control" id="txtUserName" name="username" placeholder="Steve" required>
+							</div>
+							<div class="form-group">
+								<label for="txtPassword" class="control-label">Password</label>
+								<input type="password" class="form-control" name="password" id="txtPassword" placeholder="Password">
+							</div>
+							<div class="form-group">
+								<label for="txtConfirmPWD" class="control-label">Confirm Password</label>
+								<input type="password" class="form-control" name="ConfirmPWD" id="txtConfirmPWD" placeholder="Password">
+							</div>                
+							<div class="form-group">
+								<label for="txtEmail" class="control-label">Email</label>
+								<input type="email" class="form-control" name="email" id="txtEmail" placeholder="steve.jobs@apple.com">
+							</div>
+							<div class="form-group">
+								<label for="txtPhone" class="control-label">Phone</label>
+								<input type="text" class="form-control" name="phone" id="txtPhone" placeholder="+84 09xxxxxxx">
+							</div>                
+							<div class="form-group">
+								<label for="" class="col-sm-2 control-label"></label>
+								<div class="col-sm-10">
+									<div class="g-recaptcha" data-sitekey="6LelPF8UAAAAABNvgGwFxMF54oBajdc8NFNl-7wJ"></div>
+								</div>
+							</div>
+							<div class="form-group">
+								<button type="submit" class="btn btn-primary text-center" id="btnRegister" data-dismiss="modal">Register</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- doi mat khau -->
+<div class="modal" tabindex="-1" role="dialog" id="modalResetPWD">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title">Đổi mật khẩu</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				<form>
+					<div class="form-group">
+						<label for="txtOldPassword" class="control-label">Old Password</label>
+						<input type="password" class="form-control" name="password" id="txtOldPassword" placeholder="Password">
+					</div>
+					<div class="form-group">
+						<label for="txtNewPassword" class="control-label">New Password</label>
+						<input type="password" class="form-control" name="password" id="txtNewPassword" placeholder="Password">
+					</div>
+					<div class="form-group">
+						<label for="txtConfirmNewPWD" class="control-label">Confirm New Password</label>
+						<input type="password" class="form-control" name="ConfirmPWD" id="txtConfirmNewPWD" placeholder="Password">
+					</div> 
+				</form>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-primary" id="btnResetPWD">Đổi mật khẩu</button>
+				<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script src="vendor/js/jquery-3.3.1.min.js"></script>
+<script src="vendor/js/jquery.form.min.js"></script>
+<script src="vendor/styles/bootstrap4/popper.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="vendor/plugins/greensock/TweenMax.min.js"></script>
+<script src="vendor/plugins/greensock/TimelineMax.min.js"></script>
+<script src="vendor/plugins/scrollmagic/ScrollMagic.min.js"></script>
+<script src="vendor/plugins/greensock/animation.gsap.min.js"></script>
+<script src="vendor/plugins/greensock/ScrollToPlugin.min.js"></script>
+<script src="vendor/plugins/OwlCarousel2-2.2.1/owl.carousel.js"></script>
+<script src="vendor/plugins/slick-1.8.0/slick.js"></script>
+<script src="vendor/plugins/easing/easing.js"></script>
+<script src="vendor/js/handlebars.min-v4.0.11.js"></script>
+<script src="vendor/handlebars-intl-1.1.2/handlebars-intl.min.js"></script>
+<script src="vendor/js/sweetalert.min.js"></script>
+<script src="node_modules/moment/min/moment.min.js"></script>
+<script src="node_modules/tempusdominus-bootstrap-4/build/js/tempusdominus-bootstrap-4.min.js"></script>
+<script src="js/category.js"></script>
+<script src="js/product.js"></script>
+<script src="js/user.js"></script>
+<script src="js/newProduct.js"></script>
+<script src="vendor/js/summernote-bs4.js"></script>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.9/summernote-bs4.js"></script>
+</body>
+
+</html>
